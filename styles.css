@@ -1,0 +1,204 @@
+:root {
+    --yellow: #FFFF33;
+    --lightblue: #00AFB9;
+    --blue: #0081A7;
+    --red: #F07167;
+    --green: #84FF93;
+    --bigfont: "Alfa Slab One", serif;
+    --mainfont: "Belanosima",'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', Verdana, sans-serif;
+}
+
+.navbar a{
+    font-family: (var(--bigfont));
+    text-align: center;
+    color: var(--blue)
+}
+.font{
+    font-family: var(--mainfont);
+}
+body{
+    background-image: url(/IMAGES/beach.png);
+    background-size: cover;
+}
+.main-border{
+    background-color:rgba(255, 255, 51, .4);
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2px;
+    max-width: 1800px;
+    border-width: 8px;
+    border-style:solid;
+    border-color:rgba(132, 255, 147, .6);
+}
+/* LINK DECORATION */
+.center{
+    text-align: center;
+}
+.artist-links{
+    display: inline-block;
+    font-family: var(--mainfont);
+    text-decoration: none;
+}
+
+a.music-links{
+    text-align: left;
+    text-decoration: none;
+    color: var(--green);
+    font-size: 150%;
+}
+
+a.music-links:hover{
+    text-decoration: none;
+    color:var(--yellow);
+}
+.artist-socials{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+    'Lucida Sans Unicode', 'Geneva', Verdana, sans-serif;
+    text-decoration: none;
+}
+
+a.music-socials{
+    text-align: left;
+    text-decoration: none;
+    color: var(--yellow);
+    font-size: 150%;
+}
+
+a.music-socials:hover{
+    text-decoration: none;
+    color: var(--green);
+}
+.brand-logos{
+    width: 20px;
+}
+.logo{   
+    background-image: url(IMAGES/headernew.png);
+    background-position: bottom;
+    padding: 2px;
+    border-width:4px;
+    border-style:solid;
+    border-color:#00AFB9;
+}
+
+/* HEADER */
+.header {
+    overflow: hidden;
+    height: 50%;
+    width: 100%;
+    background-image: url(IMAGES/header.png/);
+    padding: 0;
+    margin: 0;
+    }
+.headercenter {
+    display: block;
+    text-align: center;
+}
+.rcmusiclogo{
+    display: block;
+    margin: auto;
+    width: 450px;
+    max-width: 80%;
+    text-align: center;
+}
+  /* Change the background color on mouse-over */
+  .header a:hover {
+    background-color: #84FF93;
+    color: black;
+  }
+  
+  /* Style the active/current link*/
+  .header a.active {
+    background-color: dodgerblue;
+    color: white;
+  }
+/*BIO THINGS*/
+.bio {
+    background-color: rgba(0, 129, 167, .8);
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2px;
+    max-width: 1200px;
+    style:solid;
+    border-color:#00AFB9;
+  }
+
+  .bio-text{
+    text-align: center;
+    color:white;
+    font-family: Lucida system-ui;
+    font-size: 20px;
+}
+
+.bio-pic{
+    display: block;
+    width: 400px;
+    max-width: 70%;
+    border-style:solid;
+    border-color:#F07167;
+    margin: 15px auto;
+}
+
+a.socktext{
+    font-family: Lucida system-ui;
+    color: black;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+a.socktext:hover{
+    text-decoration: none;
+    color: darkred;
+}
+/*BANNER THINGS*/
+.banner{
+    display: block;
+    margin: auto;
+    width: 1000px;
+    max-width: 90%;
+}
+.spotifyrelease{
+    display: inline-block;
+    margin: 0;
+    width: 700px;
+    max-width: 80%;
+    height: 152px;
+    max-height:min-content;
+}
+
+.brand-logo{
+    display: block;
+    margin: 10px auto auto auto;
+    width: 200px;
+    max-width: 30%;
+}
+.discordserver{
+    position: fixed;
+    bottom: 0px;
+    right:0px;
+}
+.htext{
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 200%;
+    font-family: var(--mainfont);
+    color: var(--red);
+}
+.border {
+    background-color: rgba(0, 129, 167, .8);
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2px;
+    max-width: 1200px;
+    border-style:solid;
+    border-color:#00AFB9;
+}
+.border2 {
+    background-color: rgba(0, 129, 167, .8);
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2px;
+    max-width: 1200px;
+    border-style:solid;
+    border-color:#00AFB9;
+}
