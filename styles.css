@@ -12,12 +12,18 @@ html{
 }
 
 .navbar a{
-    font-family: (var(--bigfont));
+    font-family: (var(--mainfontt));
     text-align: center;
-    color: var(--blue)
+    color: var(--yellow); 
+    background-color: var(--blue);
 }
 .font{
+    display: block;
     font-family: var(--mainfont);
+    text-align: center;
+    color:var(--red);
+    
+    font-size: 30px;
 }
 body{
     background-image: url(/IMAGES/beach.png);
@@ -37,60 +43,62 @@ body{
 .center{
     text-align: center;
 }
+/* SOCIAL LINKS */
 .artist-links{
+    display: flex;
+    justify-content:center;
+    flex-wrap: wrap;
+    border-color: var(--lightblue);
+    border-style: solid;
+    border-width: 0px 3px;
     display: inline-block;
     font-family: var(--mainfont);
     text-decoration: none;
 }
 
-a.music-links{
-    text-align: left;
-    text-decoration: none;
-    color: var(--green);
-    font-size: 150%;
-}
-
-a.music-links:hover{
-    text-decoration: none;
-    color:var(--yellow);
-}
 .artist-socials{
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
-    'Lucida Sans Unicode', 'Geneva', Verdana, sans-serif;
+    display: block;
+    text-align:left;
     text-decoration: none;
 }
-
-a.music-socials{
+a.socials-links{
+    display: block;
     text-align: left;
     text-decoration: none;
     color: var(--yellow);
-    font-size: 150%;
+    font-size: 20px;
+    border: 1px;
+    letter-spacing: .5px;
 }
-
-a.music-socials:hover{
+  a.music-links{
+    display: block;
+    text-align: left;
     text-decoration: none;
     color: var(--green);
+    font-size:20px;
+    letter-spacing: 1px;
 }
+
 .brand-logos{
     width: 20px;
 }
+/* HEADER */
 .logo{   
     background-image: url(IMAGES/headernew.png);
     background-position: bottom;
     padding: 2px;
-    border-width:4px;
+    border-width:8px;
     border-style:solid;
     border-color:#00AFB9;
 }
-
-/* HEADER */
 .header {
+    display: block;
     overflow: hidden;
-    height: 50%;
-    width: 100%;
+    max-width: 1230px;
+    max-height: 220px;
     background-image: url(IMAGES/header.png/);
-    padding: 0;
-    margin: 0;
+    padding: 2px;
+    margin: auto;
     }
 .headercenter {
     display: block;
@@ -105,10 +113,20 @@ a.music-socials:hover{
 }
   /* Change the background color on mouse-over */
   .header a:hover {
-    background-color: #84FF93;
-    color: black;
+    background-color: var(--lightblue);
+    color: var(--green);
   }
-  
+
+a.socials-links:hover{
+    text-align: left;
+    text-decoration: none;
+    color: var(--green);
+}
+a.music-links:hover{
+    text-decoration: none;
+    color:var(--yellow);
+}
+
   /* Style the active/current link*/
   .header a.active {
     background-color: dodgerblue;
@@ -128,7 +146,7 @@ a.music-socials:hover{
   .bio-text{
     text-align: center;
     color:white;
-    font-family: Lucida system-ui;
+    font-family: var(--bigfont);
     font-size: 20px;
 }
 
@@ -142,7 +160,7 @@ a.music-socials:hover{
 }
 
 a.socktext{
-    font-family: Lucida system-ui;
+    font-family: var(--bigfont);
     color: black;
     font-size: 20px;
     text-decoration: none;
@@ -219,4 +237,30 @@ a.socktext:hover{
     color: var(--red);
     width: 210px;
     max-width: 100%;
+}
+.video {
+width: 320px;
+height: 240px;
+}
+.vidSlide {
+
+
+}
+.embed-socials{
+    display: flex;
+    justify-content:center;
+    flex-wrap: wrap;
+}
+.bandcamp {
+    width: 315px;
+    height: 315px;
+    max-width: 100%;
+}
+.instagram-media{
+    width: 315px; 
+    height: 315px;
+}
+iframe.instagram-media {
+    max-width: 100% !important;
+    min-width: auto !important;
 }
