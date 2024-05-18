@@ -5,7 +5,7 @@ html{
     --yellow: #FFFF33;
     --lightblue: #00AFB9;
     --blue: #0081A7;
-    --red: #F07167;
+    --red: #FF2B2E;
     --green: #84FF93;
     --bigfont: "Alfa Slab One", serif;
     --mainfont: "Belanosima",'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', Verdana, sans-serif;
@@ -30,14 +30,14 @@ body{
     background-size: cover;
 }
 .main-border{
-    background-color:rgba(255, 255, 51, .4);
+    background-color:var(--yellow);
     margin-left: auto;
     margin-right: auto;
     padding: 6px;
     max-width: 1200px;
     border-width: 8px;
     border-style:solid;
-    border-color:rgba(132, 255, 147, .6);
+    border-color: var(--green);
 }
 /* LINK DECORATION */
 .center{
@@ -45,13 +45,15 @@ body{
 }
 /* SOCIAL LINKS */
 .artist-links{
-    display: flex;
-    justify-content:center;
-    flex-wrap: wrap;
+    display: inline-flex;
+    align-items: stretch;
+    justify-content: center;
+    flex-direction: column;
+    padding: 2px;
     border-color: var(--lightblue);
     border-style: solid;
     border-width: 0px 3px;
-    display: inline-block;
+    width: 140px;
     font-family: var(--mainfont);
     text-decoration: none;
 }
@@ -68,15 +70,13 @@ a.socials-links{
     color: var(--yellow);
     font-size: 20px;
     border: 1px;
-    letter-spacing: .5px;
 }
   a.music-links{
     display: block;
-    text-align: left;
+    text-align: right;
     text-decoration: none;
     color: var(--green);
     font-size:20px;
-    letter-spacing: 1px;
 }
 
 .brand-logos{
@@ -89,7 +89,7 @@ a.socials-links{
     padding: 2px;
     border-width:8px;
     border-style:solid;
-    border-color:#00AFB9;
+    border-color:var(--lightblue);
 }
 .header {
     display: block;
@@ -129,12 +129,12 @@ a.music-links:hover{
 
   /* Style the active/current link*/
   .header a.active {
-    background-color: dodgerblue;
+    background-color: var(--lightblue);
     color: white;
   }
 /*BIO THINGS*/
 .bio {
-    background-color: rgba(0, 129, 167, .8);
+    background-color: var(--blue);
     margin-left: auto;
     margin-right: auto;
     padding: 2px;
@@ -144,6 +144,7 @@ a.music-links:hover{
   }
 
   .bio-text{
+    display: block;
     text-align: center;
     color:white;
     font-family: var(--bigfont);
@@ -155,7 +156,7 @@ a.music-links:hover{
     width: 400px;
     max-width: 70%;
     border-style:solid;
-    border-color:#F07167;
+    border-color:var(--red);
     margin: 15px auto;
 }
 
@@ -174,13 +175,13 @@ a.socktext:hover{
 .banner{
     display: block;
     margin: auto;
-    width: 1200px;
+    width: 800px;
     max-width: 100%;
 }
 .spotifyrelease{
     display: inline-block;
     margin: 0;
-    width: 1200px;
+    width: 800px;
     max-width: 100%;
     height: 152px;
     max-height:min-content;
@@ -206,22 +207,22 @@ a.socktext:hover{
     color: var(--red);
 }
 .border {
-    background-color: rgba(0, 129, 167, .8);
+    background-color: var(--blue);
     margin-left: auto;
     margin-right: auto;
     padding: 2px;
-    max-width: 1200px;
+    max-width: 800px;
     border-style:solid;
-    border-color:#00AFB9;
+    border-color:var(--lightblue);
 }
 .border2 {
-    background-color: rgba(0, 129, 167, .8);
+    background-color: var(--blue);
     margin-left: auto;
     margin-right: auto;
     padding: 2px;
     max-width: 1200px;
     border-style:solid;
-    border-color:#00AFB9;
+    border-color:var(--lightblue);
 }
 .copyrightbox{
     display: flex;
@@ -229,7 +230,6 @@ a.socktext:hover{
     align-items: center;
     justify-content: center;
     background-color: (var(--blue));
-    
 }
 .copyright{
     background-color: var(--blue);
