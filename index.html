@@ -6,30 +6,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rocco Candella's Music</title> 
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+20&display=swap" rel="stylesheet">
     <link href="script.js">
     </head>  
     <header>
       <section class="header">
         <div class="headercenter">
-        <p class="logo">
+        <div class="logo">
           <img 
            src="IMAGES/RCMUSICHEADER.png"
            alt="header-rocco.png"
            class="rcmusiclogo">  
       <h class="navbar"> 
-        <!--<a href="#projects">Projects </a>-->
-        <a href="#socials">Socials </a>
-        <a href="#contact">Contact</a>
-        <a href="">Discord</a>
+        <a href="#projects">Projects </a>
+        <a href="#contact">Contact </a>
+        <a href="#socials">Socials</a>
+        
       </div>
-    </h> </p> </section> </header>
+    </h> </div> </section> </header>
     
   <!--Single-->
+  <body>
   <main class="main-border" class="font">
-    <div class="sideborder">
+      <img src="IMAGES/sideborder1.png"class="sideborder">
+      <img src="IMAGES/sideborder2.png"class="sideborder1">
       <img src="IMAGES/TreeLeaves.png" class="tborder">
       <img src="IMAGES/flower field.png" class="bborder">
-    </div>
     <section class="center"> 
       <img src="IMAGES/newrelease.png" alt="banner" class="banner">
         <iframe src="https://open.spotify.com/embed/track/5Ga4pQlmovpYS5qtPm7iVj?utm_source=generator"  
@@ -40,32 +44,60 @@
   <h3 class="border">
     <div>
       <h1 class="font">About Me</h1>
-      <img src="/IMAGES/self portrait.png" class="bio-pic">
+      <img src="/IMAGES/self portrait.jpg" class="bio-pic">
       <p class="bio-text">
-        Hi, my name is Rocco Candella. I make music as a venue for self expression (coping). <br>My other project right now is composing the music for <a class="socktext" target="_blank";
-        href="https://twitter.com/SOCKTLPS" alt="SockTwitter">Sock : The Last Power Source</a>.<br> I am 19 working out of my bedroom with a recording booth in my closet.<br> 
+        Hi, my name is Rocco Candella. I make music as a venue for self expression (coping). My other project right now is composing the music for <a class="socktext" target="_blank";
+        href="https://twitter.com/SOCKTLPS" alt="SockTwitter">Sock : The Last Power Source</a>. I am 19 working out of my bedroom with a recording booth in my closet. 
         <!-- closable photo of my setup popup style--><img> I use FL Studio to make all my music and sounds.
       </p> </h3> </div>
-  <!--Future Projects-->
- <!-- <h3 class="border" id="projects">
-    <div>
-      <h1 class="font" >Projects</h1>
-      <b class="bio-pic">
-        <iframe class="video" src="https://www.youtube-nocookie.com/embed/IBXvCtTQSV4?si=P3AkAH2GpBK_eITR" title="YouTube video player"
-        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-          <video alt="" class="video" controls autoplay muted>
-          https://youtu.be/IBXvCtTQSV4?si=0N_7T6ML9R6RB0_z
-          <source src="video" type="mp4">
-          <source src="sound" type="ogg">
-          Your browser does not support the video tag.
-          </video>-->
-      </b>
-  </h1>
+  <!--Slide-->
+ <h3 class="border" id="projects">
+  <h class="font" >Projects</h>
+  <div class="mobilevideo"></div>
+  <div class="mediaquery">
+  <div style="height: 100%; overflow-x: hidden; text-align: center">
+    <div class="csslider infinity" id="slider1">
+    <input type="radio" name="slides" checked="checked" id="slides_1"/>
+    <input type="radio" name="slides" id="slides_2"/>
+    <input type="radio" name="slides" id="slides_3"/>
+      <ul>
+        <li>
+          <div>
+          <iframe class="video" width="100%" height="400px" src="https://www.youtube.com/embed/IBXvCtTQSV4?si=0kaQBxtq34T2adfa" title="YouTube video player"
+          frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          </div>
+        </li>
+        <li>
+          <div>
+            <iframe  width="100%" height="400px" src="https://www.youtube.com/embed/XzsfB_LmLXE?si=FehkfcSaWz0fRlfx" title="YouTube video player"
+            frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          </div>
+        </li>
+        <li>
+          <div>
+          <img src=""></img>
+          </div>
+        </li>
+      </ul>
+        <div class="arrows">
+          <label for="slides_1"></label>
+          <label for="slides_2"></label>
+          <label for="slides_3"></label>
+          
+          <label class="goto-first" for="slides_1"></label>
+          <label class="goto-last" for="slides_3"></label>
+        </div>
+        <div class="navigation"> 
+          <div>
+            <label for="slides_1"></label>
+            <label for="slides_2"></label>
+            <label for="slides_3"></label>
+            
+          </div></div></div></div></div>
+  </h3>
   <!--Links -->
-
-      <h3 class="border" id="socials">
-      <section class="center" class="border2"> 
+    <h3 class="border" id="socials">
+      <section class="center"> 
         <p class="artist-links" >
           <a class="font" target="_blank">Socials</a>
           <a href="https://www.instagram.com/roccocandella/" class="socials-links"><img class="brand-logos" alt='instagram logo'src="/IMAGES/logos/insta.png">Instagram</a>
@@ -76,7 +108,6 @@
           <a class="music-links" href="https://soundcloud.com/roccocandella">Soundcloud<img class="brand-logos" src="/IMAGES/logos/sc.png"></img></a>
           <a class="music-links" href="https://roccocandella.bandcamp.com/track/the-world-is-watching">Bandcamp<img class='brand-logos' src="/IMAGES/logos/bandcamp.png"></img></a>
           <a class="music-links" href="https://open.spotify.com/artist/1t0iJx7MPsPeEPjWbFUVKG?si=46cmDXK8Te2oxx0czgNB8w">Spotify<img class="brand-logos" src="/IMAGES/logos/spotify.png"></img></a>
-       
     </section> 
     <h class="bio-text">Follow me on insta or support me directly on bandcamp!</h>
       <div class="embed-socials"> 
@@ -92,9 +123,14 @@
         roccocandellamusic@gmail.com
         <br>you can dm me on something too
       </p> </div> </h3>
+    <!--DROP DOWN CREDITS! <h1>Credits and Thanks</h1>
+    <p>Thank you to <a href="https://x.com/W0lfPupz">WolfPupz</a> for drawing the flowers and leaves around everything!></p>-->
 </main>
-<div class="copyrightbox"><p class="copyright">© 2024, Rocco Candella Music</p></div>
-<img src="IMAGES/RC_LOGObrick.png" alt="RC logo" class="brand-logo">
+</body>
+<div class="copyrightbox">
+  <div class="copyright">
+    <div><p class="copyrighttext">© 2024, Rocco Candella Music</p></div>
+</div>
 <!--hi! :D-->
 
 </html>
