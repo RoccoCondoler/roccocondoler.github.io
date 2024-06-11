@@ -5,40 +5,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rocco Candella's Music</title> 
+    <link rel="icon" href="/IMAGES/logos/faviconRC.png">
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Jersey+20&display=swap" rel="stylesheet">
-    <link href="script.js">
     </head>  
     <header>
-      <section class="header">
+      <div class="paddingtop"><section class="header">
         <div class="headercenter">
         <div class="logo">
-          <img 
-           src="IMAGES/RCMUSICHEADER.png"
-           alt="header-rocco.png"
-           class="rcmusiclogo">  
-      <h class="navbar"> 
+          <img src="IMAGES/RCMUSICHEADER.png" alt="RC Music" class="rcmusiclogo">  
+      <div class="navbar"> 
         <a href="#projects">Projects </a>
-        <a href="#contact">Contact </a>
-        <a href="#socials">Socials</a>
-        
+        <a href="#socials">Links </a>
+        <a href="#contact">Contact</a>
       </div>
-    </h> </div> </section> </header>
+    </div> </div> </section></div> </header>
     
   <!--Single-->
   <body>
-  <main class="main-border" class="font">
-      <img src="IMAGES/sideborder1.png"class="sideborder">
-      <img src="IMAGES/sideborder2.png"class="sideborder1">
-      <img src="IMAGES/TreeLeaves.png" class="tborder">
-      <img src="IMAGES/flower field.png" class="bborder">
+  <main class="main-border">
+      <div class="overflow">
+      <div class="sideborder leftfl" ></div>
+      <div class="sideborder1 rightfl" ></div>
+      <img src="IMAGES/TreeLeaves.png"  class="tborder">
+      <img src="IMAGES/flower field.png" class="bborder"></div>
     <section class="center"> 
-      <img src="IMAGES/newrelease.png" alt="banner" class="banner">
-        <iframe src="https://open.spotify.com/embed/track/5Ga4pQlmovpYS5qtPm7iVj?utm_source=generator"  
-        frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy" alt="spotify link" class="spotifyrelease">
-        </iframe>
+      <div class="bannermedia"><img src="IMAGES/newrelease.jpg" alt="banner" class="banner" ></div>
+       <div class="mediaquery"><iframe alt="spotify link" class="spotifyrelease"  src="https://open.spotify.com/embed/track/5Ga4pQlmovpYS5qtPm7iVj?utm_source=generator"  
+        frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy" >
+        </iframe></div>
+        <div class="mediaquery2"><iframe  style="border-radius:12px" src="https://open.spotify.com/embed/track/5Ga4pQlmovpYS5qtPm7iVj?utm_source=generator" 
+        width="60%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></div>
       </section>  
       <!-- Bio -->
   <h3 class="border">
@@ -48,12 +47,18 @@
       <p class="bio-text">
         Hi, my name is Rocco Candella. I make music as a venue for self expression (coping). My other project right now is composing the music for <a class="socktext" target="_blank";
         href="https://twitter.com/SOCKTLPS" alt="SockTwitter">Sock : The Last Power Source</a>. I am 19 working out of my bedroom with a recording booth in my closet. 
-        <!-- closable photo of my setup popup style--><img> I use FL Studio to make all my music and sounds.
+        <!-- closable photo of my setup popup style<img>--> I use FL Studio to make all my music and sounds.
       </p> </h3> </div>
   <!--Slide-->
- <h3 class="border" id="projects">
-  <h class="font" >Projects</h>
-  <div class="mobilevideo"></div>
+  <h3 class="border">
+  <h class="font" id="projects">Projects</h>
+  <div class="projectmobile collapsible"><p class="bio-text">Check out the stuff im working on now!</p>
+  <img src="IMAGES/logos/youtube.png" class="youtubelogo">
+    <a href="https://www.youtube.com/embed/XzsfB_LmLXE?si=PhHNPrf9raAXEhQo"><img src="IMAGES/mobile/worldwatching.jpg" class="projectmobile1"></a>
+    <a href="https://twitter.com/SOCKTLPS" target="_blank"><img src="IMAGES/mobile/socktitle.jpg" class="projectmobile1"></a>
+    <img src="IMAGES/mobile/newsingle.jpg" class="projectmobile1">
+    
+  </div></div>
   <div class="mediaquery">
   <div style="height: 100%; overflow-x: hidden; text-align: center">
     <div class="csslider infinity" id="slider1">
@@ -75,7 +80,7 @@
         </li>
         <li>
           <div>
-          <img src=""></img>
+          <img src="IMAGES/video.jpg"></img>
           </div>
         </li>
       </ul>
@@ -93,10 +98,11 @@
             <label for="slides_2"></label>
             <label for="slides_3"></label>
             
-          </div></div></div></div></div>
+          </div></div></div></div></div></section>
   </h3>
   <!--Links -->
-    <h3 class="border" id="socials">
+    <h3 class="border">
+      <h class="font" id="socials">Links</h>
       <section class="center"> 
         <p class="artist-links" >
           <a class="font" target="_blank">Socials</a>
@@ -116,21 +122,20 @@
         seamless><a href="https://roccocandella.bandcamp.com/track/the-world-is-watching">The World Is Watching by Rocco Candella</a></iframe>
   </div>
     </p> </p> </h3> 
-  <h3 class="border" id="contact">
+  <h3 class="border">
     <div>
-      <h1 class="font" >Contact Me</h1>
+      <h class="font" id="contact">Contact Me</h>
       <p class="contacttext">
         roccocandellamusic@gmail.com
-        <br>you can dm me on something too
-      </p> </div> </h3>
-    <!--DROP DOWN CREDITS! <h1>Credits and Thanks</h1>
-    <p>Thank you to <a href="https://x.com/W0lfPupz">WolfPupz</a> for drawing the flowers and leaves around everything!></p>-->
+        <br><br>you can dm me too!</p>
+      <div class="flexcenter">
+        <label for="check" class="togButton font">Credits<img height="30px" width="30px" src="IMAGES/logos/expandarrows.png"></label>
+        <input type="checkbox" class="togCheck" id="check">
+        <div class="togContent">
+        <p class="bio-text">Thank you to everyone who supported me and helped out with opinions on the visuals on this site!<br><br>Thank you to <a href="https://x.com/W0lfPupz">WolfPupz</a> for drawing the flowers!</p><br>
+  </div> </div> </div> </h3>
 </main>
 </body>
-<div class="copyrightbox">
-  <div class="copyright">
-    <div><p class="copyrighttext">© 2024, Rocco Candella Music</p></div>
-</div>
-<!--hi! :D-->
-
+  <div class="copyrightbox"> <div class="copyright">
+    <div><p class="copyrighttext">© 2024, Rocco Candella Music</p></div></div>
 </html>
