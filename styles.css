@@ -16,27 +16,34 @@ html{
 .mediaquery2{
     display: none;
 }
+.navbar{
+    border-radius: 0px 0px 20px 20px;
+}
 .navbar a{
     display: flex;
     justify-content: space-around;
+    border-radius: 10px;
 }
 }
 @media screen and (min-width:1400px){
 
 .projectmobile{
     display:none;
-    
 }  
 }
 @media screen and (max-width: 1400px){
      .mediaquery{
     display:none;
 }  
+.navbar a{
+    border-radius: 5px;
+}
 .navbar{
     display: flex;
     justify-content: space-around;
     margin-left: 10vw;
     margin-right: 10vw;
+    border-radius: 5px;
 }
 .bannermedia{
     position: relative;
@@ -145,34 +152,7 @@ body{
     pointer-events: none;
     image-rendering: pixelated;
 }
-    /* Credits */
-.togCheck { display: none; 
-}
-.togContent {
-    max-height: 0;
-    opacity: 0;
-    visibility: hidden;
-    transition: .2s;
-}
-.togCheck:checked + .togContent {
-     max-height: 100vh; 
-     opacity: 1;
-     visibility: visible;
-}
-.togButton {
-    display: block;
-    width: 500px;
-    background: var(--lightblue);
-    cursor: pointer;
-}
-.togContent { 
-    background: var(--blue); 
-    width: 500px;
-}
-.togContent p {
-    padding: 50px 10px;
-    margin: 0;
-}
+
     /* Hover */
 .header a:hover {
     background-color: var(--lightblue);
@@ -226,6 +206,7 @@ a.music-links:hover{
     text-align: center;
     color: var(--lightblue); 
     text-decoration: none;
+
 }
     /* Single */
 .banner{
@@ -373,6 +354,34 @@ iframe.instagram-media {
     top: -23px;
     font-size: 1.43rem;
     text-align: center;
+} 
+   /* Credits */
+.togCheck { display: none; 
+}
+.togContent {
+    max-height: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: .2s;
+}
+.togCheck:checked + .togContent {
+     max-height: 100vh; 
+     opacity: 1;
+     visibility: visible;
+}
+.togButton {
+    display: block;
+    width: 500px;
+    background: var(--lightblue);
+    cursor: pointer;
+}
+.togContent { 
+    background: var(--blue); 
+    width: 500px;
+}
+.togContent p {
+    padding: 50px 10px;
+    margin: 0;
 }
 /* LINK and TEXT */
 .center{
